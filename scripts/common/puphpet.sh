@@ -25,7 +25,7 @@ fi
 /bin/bash /.puphpet-stuff/shell/initial-setup.sh /.puphpet-stuff || true
 /bin/bash /.puphpet-stuff/shell/install-puppet.sh || true
 
-if "${OS}" == 'centos'; then
+if [ "${OS}" == 'centos' ]; then
     yum clean metadata
     yum -y update
 
